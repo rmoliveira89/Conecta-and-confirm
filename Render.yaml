@@ -1,0 +1,10 @@
+
+services:
+  - type: web
+    name: ifood-confirmacao-auto
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    envVars:
+      - key: NODE_ENV
+        value: production
